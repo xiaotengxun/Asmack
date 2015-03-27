@@ -345,6 +345,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020034
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020035
 int drawable abc_textfield_search_material 0x7f020036
 int drawable ic_launcher 0x7f020037
+int drawable icon_chat_send 0x7f020038
 int id action_bar 0x7f090031
 int id action_bar_activity_content 0x7f090003
 int id action_bar_container 0x7f090030
@@ -358,10 +359,14 @@ int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f09002e
 int id action_mode_bar_stub 0x7f09002d
 int id action_mode_close_button 0x7f090020
-int id action_settings 0x7f090045
+int id action_settings 0x7f090049
 int id activity_chooser_view_content 0x7f090021
 int id always 0x7f090014
 int id beginning 0x7f09001b
+int id chat_input_content 0x7f090047
+int id chat_lsv 0x7f090046
+int id chat_rel_content 0x7f090045
+int id chat_send 0x7f090048
 int id checkbox 0x7f090029
 int id collapseActionView 0x7f090015
 int id decor_content_parent 0x7f09002f
