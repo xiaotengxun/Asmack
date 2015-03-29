@@ -1,19 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#ffffff" >
+    android:layout_height="fill_parent" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@+id/chat_rel_content"
-        android:layout_below="@+id/topbar" >
+        android:layout_above="@+id/chat_rel_content" >
 
         <ListView
             android:id="@+id/chat_lsv"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:divider="@null"
             android:scrollbars="none" >
         </ListView>
     </RelativeLayout>
@@ -27,8 +24,8 @@
         <EditText
             android:id="@+id/chat_input_content"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:layout_toLeftOf="@+id/chat_send"
+            android:layout_height="wrap_content"
             android:background="@android:drawable/edit_text"
             android:enabled="true"
             android:hint="你好，请输入..."
@@ -40,20 +37,10 @@
             android:id="@+id/chat_send"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/chat_input_content"
             android:layout_alignParentRight="true"
-            android:background="@drawable/bg_info_send"
             android:clickable="true"
             android:scaleType="centerInside"
             android:src="@drawable/icon_chat_send" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/topbar"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp" >
-
-        <include layout="@layout/back" />
     </RelativeLayout>
 
 </RelativeLayout>
