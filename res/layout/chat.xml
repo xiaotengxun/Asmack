@@ -5,13 +5,14 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/topbar"
-        android:layout_above="@+id/chat_rel_content" >
+        android:layout_above="@+id/chat_rel_content"
+        android:layout_below="@+id/topbar" >
 
         <ListView
             android:id="@+id/chat_lsv"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:divider="@null"
             android:scrollbars="none" >
         </ListView>
     </RelativeLayout>
@@ -49,6 +50,7 @@
         android:id="@+id/topbar"
         android:layout_width="fill_parent"
         android:layout_height="50dp" >
+
         <include layout="@layout/back" />
     </RelativeLayout>
 
