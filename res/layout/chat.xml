@@ -5,6 +5,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
         android:layout_above="@+id/chat_rel_content" >
 
         <ListView
@@ -24,8 +25,8 @@
         <EditText
             android:id="@+id/chat_input_content"
             android:layout_width="fill_parent"
-            android:layout_toLeftOf="@+id/chat_send"
             android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/chat_send"
             android:background="@android:drawable/edit_text"
             android:enabled="true"
             android:hint="你好，请输入..."
@@ -37,10 +38,18 @@
             android:id="@+id/chat_send"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chat_input_content"
             android:layout_alignParentRight="true"
             android:clickable="true"
             android:scaleType="centerInside"
             android:src="@drawable/icon_chat_send" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+        <include layout="@layout/back" />
     </RelativeLayout>
 
 </RelativeLayout>

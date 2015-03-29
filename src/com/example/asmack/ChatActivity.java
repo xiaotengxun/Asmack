@@ -18,7 +18,7 @@ public class ChatActivity extends Activity{
 		setContentView(R.layout.chat);
 		initData();
 		lsvChat=(ListView)findViewById(R.id.chat_lsv);
-		adapter=new ChatAdapter(listChat, getApplicationContext());
+		adapter=new ChatAdapter(getApplicationContext(),listChat);
 		lsvChat.setAdapter(adapter);
 	}
 	
